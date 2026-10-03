@@ -1,0 +1,97 @@
+/* 테마 토큰, 리셋, 기본 타이포그래피 */
+:root {
+  --bg: #fcfcfb;
+  --surface: #ffffff;
+  --text: #1f2328;
+  --text-muted: #636c76;
+  --border: #e5e7eb;
+  --accent: #2f6fed;
+  --accent-soft: #e8f0fe;
+  --code-bg: #f4f5f7;
+  --code-text: #1f2328;
+  --quote-bar: #c9d3e6;
+
+  /* 코드 하이라이트 */
+  --hl-keyword: #cf222e;
+  --hl-string: #0a3069;
+  --hl-number: #0550ae;
+  --hl-comment: #6e7781;
+  --hl-title: #8250df;
+  --hl-attr: #116329;
+
+  --font-body: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR',
+    'Malgun Gothic', system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, 'JetBrains Mono', Consolas, 'D2Coding', monospace;
+  --measure: 68ch;
+  color-scheme: light;
+}
+
+[data-theme='dark'] {
+  --bg: #14161a;
+  --surface: #1b1e24;
+  --text: #e6e8eb;
+  --text-muted: #9aa3ad;
+  --border: #2c313a;
+  --accent: #7aa7ff;
+  --accent-soft: #232b3d;
+  --code-bg: #20242b;
+  --code-text: #e6e8eb;
+  --quote-bar: #3a4560;
+
+  --hl-keyword: #ff7b72;
+  --hl-string: #a5d6ff;
+  --hl-number: #79c0ff;
+  --hl-comment: #8b949e;
+  --hl-title: #d2a8ff;
+  --hl-attr: #7ee787;
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: clamp(16px, 1.5vw + 12px, 18px);
+  line-height: 1.75;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--accent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}

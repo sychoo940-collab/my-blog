@@ -1,0 +1,23 @@
+[
+  {
+    "slug": "2026-10-03-today-i-learned",
+    "title": "오늘 배운 것",
+    "date": "2026-10-03",
+    "tags": ["HTML", "CSS", "JavaScript", "회고"],
+    "summary": "Claude Code로 블로그를 만들며 정리한 HTML, CSS, JavaScript의 역할."
+  },
+  {
+    "slug": "2026-10-03-hello-world",
+    "title": "블로그를 시작합니다",
+    "date": "2026-10-03",
+    "tags": ["소개", "블로그"],
+    "summary": "마크다운 파일 하나로 글을 쓰고, 프레임워크 없이 웹사이트로 보여주는 블로그입니다."
+  },
+  {
+    "slug": "2026-10-01-markdown-guide",
+    "title": "마크다운 문법 한눈에 보기",
+    "date": "2026-10-01",
+    "tags": ["마크다운", "가이드"],
+    "summary": "이 블로그에서 지원하는 제목, 목록, 표, 코드 블록 등의 문법을 정리했습니다."
+  }
+]
